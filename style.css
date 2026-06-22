@@ -1,0 +1,170 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #0f172a;
+    padding: 20px;
+}
+
+/* Main Card */
+
+.profile-card{
+    background: #f8f1e5;
+    width: 100%;
+    max-width: 380px;
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+
+    box-shadow:
+    0 10px 30px rgba(236,72,153,0.35);
+
+    transition: all 0.3s ease;
+}
+
+.profile-card:hover{
+    transform: translateY(-8px);
+}
+
+/* Profile Image */
+
+.profile-card img{
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+
+    border: 4px solid #ec4899;
+    margin-bottom: 15px;
+}
+
+/* Name */
+
+.profile-card h1{
+    font-size: 2rem;
+    color: #1e293b;
+    margin-bottom: 5px;
+}
+
+/* Profession */
+
+.profile-card h2{
+    font-size: 1.1rem;
+    color: #475569;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+/* Location */
+
+.location{
+    color: #64748b;
+    margin-bottom: 20px;
+    font-size: 0.95rem;
+}
+
+/* About Section */
+
+.about{
+    margin-bottom: 25px;
+}
+
+.about h3{
+    color: #1e293b;
+    margin-bottom: 10px;
+}
+
+.about p{
+    color: #475569;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+/* Skills */
+
+.skills{
+    margin-bottom: 25px;
+}
+
+.skills h3{
+    color: #1e293b;
+    margin-bottom: 12px;
+}
+
+.skill-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill-container span{
+    background: #ec4899;
+    color: white;
+    padding: 8px 14px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    transition: 0.3s;
+}
+
+.skill-container span:hover{
+    transform: scale(1.05);
+}
+
+/* Contact Button */
+
+.contact-btn{
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background: #ec4899;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+.contact-btn:hover{
+    background: #db2777;
+    transform: scale(1.02);
+}
+
+/* Mobile Responsive */
+
+@media (max-width: 480px){
+
+    .profile-card{
+        padding: 25px;
+    }
+
+    .profile-card img{
+        width: 120px;
+        height: 120px;
+    }
+
+    .profile-card h1{
+        font-size: 1.7rem;
+    }
+
+    .profile-card h2{
+        font-size: 1rem;
+    }
+
+    .about p{
+        font-size: 0.9rem;
+    }
+}
